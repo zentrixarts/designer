@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zentrix Arts - Designer Gráfico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00bfff;
+      --dark: #0f0f0f;
+      --light: #1a1a1a;
+      --gray: #aaa;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--dark);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: #121212;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: var(--primary); }
+
+    .hero {
+      padding: 5rem 2rem;
+      text-align: center;
+      background: linear-gradient(160deg, #0f0f0f 50%, #1a1a1a 100%);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 1rem auto;
+      color: var(--gray);
+    }
+
+    .hero .btn {
+      margin-top: 2rem;
+      background: var(--primary);
+      color: #000;
+      font-weight: bold;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero .btn:hover { background: #00a6e0; }
+
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .section p {
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      color: #ccc;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .card .price {
+      font-size: 2rem;
+      margin: 1rem 0;
+      color: #fff;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      text-align: left;
+    }
+
+    .card ul li {
+      margin-bottom: 0.5rem;
+      color: #ccc;
+    }
+
+    .card button {
+      margin-top: 1rem;
+      padding: 0.6rem 1.5rem;
+      background: var(--primary);
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .cta {
+      background: #111;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .cta p {
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+
+
+    
+    .cta a {
+      background: var(--primary);
+      color: #000;
+      padding: 0.8rem 2rem;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .cta a:hover {
+      background: #00a6e0;
+    }
+
+    footer {
+      background: #101010;
+      color: #666;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+ <header>
+  <a href="#" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+    <img src="img/zentrix-logo.png.png" alt="Zentrix Arts" style="height: 40px;">
+    <span style="color: var(--primary); font-weight: bold;"></span>
+  </a>
+  <nav>
+    <a href="#planos">Pacotes</a>
+    <a href="#recursos">Recursos</a>
+    <a href="#contato">Discord</a>
+    <a href="#portfolio">Portfólio</a>
+  </nav>
+</header>
+
+
+
+
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Z E N T R I X</h1>
+    <p>Sejam Bem-vindo, a maior empresa de designer gráficos focado em entregar o melhor projeto para streamers em todas as plataformas.</p>
+        <a href="https://discord.gg/MVp9qKGJcb" target="_blank" class="btn">CONTRATE NOSSO SERVIÇO</a>
+  </section>
+  
+  
+
+  
+  <!-- Recursos -->
+  <section class="section" id="recursos">
+    <h2>Identidade Visual para levar seu conteúdo para o próximo nível!</h2>
+    <p>Seja você um streamer experiente ou esteja apenas começando sua jornada de criação de conteúdo todas as artes são especificamente criadas e personalizadas de acordo com seu gosto, temos o maior prazer de ajudar você a construir o seu projeto e ficar com a sua cara!.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Banners e Capas</h3>
+        <p>Crie seu banner e capa para sua Live Stream ou para sua rede social, Twitch, Kick, YouTube, TikToK, Instagram e muito mais..</p>
+      </div>
+      <div class="card">
+        <h3>Stream Overlay</h3>
+        <p>Personalizamos sua Arte, para sua stream com pacotes animados, Live Iniciando, Tela de Chat e outros..</p>
+      </div>
+      <div class="card">
+        <h3>Alertas na sua Stream</h3>
+        <p>Animações com alertas de Sub, Follow, Raid, Donate entre outros alertas para enganjar seu público.</p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Seção de Planos -->
+  <section class="section" id="planos">
+    <h2>Conheça nossos pacotes de serviço</h2>
+    <p>Escolha o pacote ideal para sua stream e comece a ser um profissional para sua comunidade!</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Essencial</h3>
+        <p class="price">R$89,99</p>
+        <ul>
+          <li>Banner perfil</li>
+          <li>Foto perfil</li>
+          <li>3 banners simples</li>
+        </ul>
+        <button onclick="window.open('https://discord.gg/MVp9qKGJcb', '_blank')">Contratar</button>
+      </div>
+      <div class="card">
+        <h3>Profissional</h3>
+        <p class="price">R$149,99</p>
+        <ul>
+          <li>Todas opções do Essencial</li>
+          <li>1 Tela de Iniciando (Estática)</li>
+          <li>1 Tela de encerrando (Estática)</li>
+        </ul>
+        <button onclick="window.open('https://discord.gg/MVp9qKGJcb', '_blank')">Contratar</button>
+      </div>
+      <div class="card">
+        <h3>Premium</h3>
+        <p class="price">R$199,99</p>
+        <ul>
+          <li>Todas opções anteriores</li>
+          <li>1x Tela inciando (Animada)</li>
+          <li>1x Tela Encerrando (Animada)</li>
+          <li>1x Tela Chat (Animada)</li>
+          <li></li>
+        </ul>
+        <button onclick="window.open('https://discord.gg/MVp9qKGJcb', '_blank')">Contratar</button>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- CTA Final -->
+  <section class="cta" id="contato">
+    <h2>Comece seu projeto com a gente!</h2>
+    <p>Experimente fazer um orçamento ou fale com um de nossos consultores.</p>
+    <a href="#">Solicitar Orçamento</a>
+  </section>
+
+
+
+
+
+  <!-- Rodapé -->
+  <footer>
+    &copy; 2025 Zentrix. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
